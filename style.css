@@ -1,0 +1,111 @@
+body {
+    height: 97vh;
+    background-color: rgba(250, 146, 0, 0.749);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container #input {
+    outline: none;
+    width: calc(70% - 100px);
+
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: white;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container #input[type="text"],
+.container #button {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container #button {
+
+    padding: 10px;
+    border-radius: 50px;
+    border-color: transparent;
+    color: blue;
+    background-color: aqua;
+    width: calc(20% - 10px)
+}
+
+li {
+    list-style-type: none;
+}
+
+.delebutton {
+    left: 20px;
+    width: calc(20% -10px);
+    padding: 10px;
+    background-color: rgba(250, 146, 0, 0.749);
+    color: balck;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.textspace {
+    width: calc(80% - 90px);
+    height: auto;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    left: 10%;
+
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    transition: border-bottom 0.3s ease;
+}
+
+.donebutton {
+    left: 10px;
+    width: calc(20% -10px);
+    padding: 10px;
+    background-color: rgba(250, 146, 0, 0.749);
+    color: balck;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 70%;
+        max-width: 500px;
+
+    }
+    .container #button {
+        width: calc(30% - 5px);
+    }
+
+    .delebutton {
+        width: calc(15% - 5px);
+    }
+}
